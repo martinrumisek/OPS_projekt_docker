@@ -1,1 +1,3 @@
-# OPS_projekt_docker
+# Úvod dockeru
+
+## Použité příkazy + stručný popis

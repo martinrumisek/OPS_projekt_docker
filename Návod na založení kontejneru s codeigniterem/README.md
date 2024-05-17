@@ -1,0 +1,1 @@
+# Spuštění kontejneru s codeigniter
