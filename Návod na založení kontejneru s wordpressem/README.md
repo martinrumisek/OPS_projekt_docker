@@ -30,7 +30,7 @@ docker run --name wordpress -p 80:80 -e WORDPRESS_DB_HOST=wordpressdb:3306 -e WO
 - **WORDPRESS_DB_NAME** = Jméno databáze
 <br>
 
-### 3. Teď je potřeba jen zjistit ip adresu stroj
+### 3. Teď je potřeba jen zjistit ip adresu stroje
 ```linux
 ip a
 ```
