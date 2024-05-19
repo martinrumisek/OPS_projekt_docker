@@ -4,7 +4,7 @@ WordPress je redakční systém pro tvoření webových stránek a správu jejic
 <br>
 
 ## Jak si nainstalovat kontejner s WordPressem?
-Je potřeba mít na svém stroji již nainstalované virtualizační kontejnery. My jsme pracovali s kontejnerem Docker. Pokud nemáte nainstalovaný, tak návod naleznete [zde](../README.md)
+Je potřeba mít na svém stroji již nainstalované virtualizační kontejnery. My jsme pracovali s kontejnerem Docker. Pokud nemáte nainstalovaný, tak návod naleznete [zde](../Návod%20na%20spuštění%20dockeru/README.md).
 
 ## Postup instalace:
 ### 1. Musíme si vytvořit kontejner s MySQL databází, který se vytvoří následovně:
@@ -53,3 +53,8 @@ Pokud se Vám instalační stránka nezobrazila, tak se někde musela stát chyb
 <br>
 
 Pokud jste postupovali přesně podle návodu a nemáte chybu v kontejneru docker, tak by mělo všechno řádně fungovat.
+
+#### Zdroje:
+- 	https://www.mydreams.cz/cz/wiki/7400-jak-nainstalovat-wordpress-na-docker.html
+-	GPT
+
