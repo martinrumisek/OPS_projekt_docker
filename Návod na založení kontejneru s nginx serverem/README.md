@@ -11,8 +11,9 @@ sudo docker run -itd --name my-website -p 80:80 nginx:latest bash
 <br>
 Tímhle příkazem vytvoříme kontejner s webovým serverem NGINX.
 <br>
-**--name** = zde můžeme zvolit název kontejneru
-**-p** = zde volíme číslo portu, můžeme zvolit libovolné porty, jako například 80:80, který se používá nejčastěji nebo 8080:80, 8081:80,...
+
+- **--name** = zde můžeme zvolit název kontejneru
+- **-p** = zde volíme číslo portu, můžeme zvolit libovolné porty, jako například - 80:80, který se používá nejčastěji nebo 8080:80, 8081:80,...
 <br>
 
 ![Vytvoření kontejneru s webovým serverem nginx](img/nginx_obr01.png)
