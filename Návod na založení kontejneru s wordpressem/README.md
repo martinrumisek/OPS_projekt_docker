@@ -9,7 +9,7 @@ Je potřeba mít na svém stroji již nainstalované virtualizační kontejnery.
 ## Postup instalace:
 ### 1. Musíme si vytvořit kontejner s MySQL databází, který se vytvoří následovně:
 ```linux
-docker run --name wordpressdb -e MYSQL_ROOT_PASSWORD=heslo -e MYSQL_DATABASE=wordpress -d mysql:5.7
+docker run --name wordpressdb -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=wordpress -d mysql:5.7
 ```
 - **MYSQL_ROOT_PASSWORD** = zadejte si heslo pro správce databáze
 - **MYSQL_DATABASE** = zadejte si název databáze
@@ -20,7 +20,7 @@ docker run --name wordpressdb -e MYSQL_ROOT_PASSWORD=heslo -e MYSQL_DATABASE=wor
 
 ### 2. Musíme vytvořit kontejner s WordPressem.
 ```linux
-docker run --name wordpress -p 80:80 -e WORDPRESS_DB_HOST=wordpressdb:3306 -e WORDPRESS_DB_USER=root -e WORDPRESS_DB_PASSWORD=vašeHeslo -e WORDPRESS_DB_NAME=wordpress --link wordpressdb:mysql -d wordpress
+docker run --name wordpress -p 80:80 -e WORDPRESS_DB_HOST=wordpressdb:3306 -e WORDPRESS_DB_USER=root -e WORDPRESS_DB_PASSWORD=password -e WORDPRESS_DB_NAME=wordpress --link wordpressdb:mysql -d wordpress
 ```
 ![Vytvoření kontejneru s wordpressem](img/dockerWordpress_obr02.png)
 <br>
