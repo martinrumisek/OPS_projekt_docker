@@ -12,3 +12,40 @@ Proč použít PuTTY? Má to hned několik důvodů. Debian spuštěný přes Li
 
 ## Instalace balíčku docker.io
 Pro nainstalování Dockeru je potřeba stáhnout odpovídající balíček: `sudo apt install docker.io`
+
+## Příkazy pro práci s Dockerem
+Stažení image (v tomto případě pro nejnovější verzi nginx):
+
+`sudo docker pull nginx:latest`
+
+Vytvoření kontejneru:
+
+`sudo docker run -itd --name web -p 80:80 nginx:latest`
+
+Výpis všech kontejnerů:
+
+`sudo docker ps -a`
+
+Zapnutí kontejneru (s názvem web):
+
+`sudo docker start web`
+
+Zastavení kontejneru (s názvem web):
+
+`sudo docker stop web`
+
+Převzetí kontejneru (s názvem web):
+
+`sudo docker attach `
+
+Vstup do kontejneru (s názvem web):
+
+`sudo docker exec -it web bash`
+
+Opuštění rozhraní kontejneru:
+
+`exit`
+
+Odstranění kontejneru (s názvem web):
+
+`sudo docker rm web`
